@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function Categorie() {
   return (
     <div>In Construction</div>
-  )
+  );
 }
 
-export default Categorie
+export default Categorie;
