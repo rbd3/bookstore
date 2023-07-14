@@ -1,5 +1,6 @@
-import React from "react";
-import Book from "./Home";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Book from './Home';
 
 const BookList = ({ books }) => (
     <div>
@@ -8,6 +9,10 @@ const BookList = ({ books }) => (
       ))}
     </div>
   );
+
+  BookList.prototypes = {
+    books: PropTypes.string,
+  }
   
   export default BookList;
   
