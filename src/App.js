@@ -1,16 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Categorie from './components/Categorie';
+import Categories from './components/Categories';
+import ShowBooks from './components/ShowBooks';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/quote" element={<Categorie />} />
+        <Route path="/" element={<ShowBooks />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </div>
   );

@@ -1,10 +1,25 @@
 import React from 'react';
-import './Home.css';
+import PropTypes from 'prop-types';
+import Button from './Button';
 
-const Home = () => (
-  <div className="page">
-    Homepage
+const Book = ({ title, author }) => (
+  <div className='author-wrapper'>
+    <h3 className='athor-name'>{title}</h3>
+    <p>
+      {author}
+    </p>
+    <Button name="Remove" />
   </div>
 );
 
-export default Home;
+Book.propTypes = {
+  title: PropTypes.string,
+  author: PropTypes.string,
+};
+
+Book.defaultProps = {
+  title: 'Book title',
+  author: 'Unknown Author',
+};
+
+export default Book;
