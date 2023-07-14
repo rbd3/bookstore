@@ -8,11 +8,16 @@ const BookList = ({ books }) => (
         <Book key={book.id} title={book.title} author={book.author} />
       ))}
     </div>
-  );
+);
 
-  BookList.prototypes = {
-    books: PropTypes.string,
-  }
-  
-  export default BookList;
-  
+BookList.propTypes = {
+    books: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number,
+        title: PropTypes.string,
+        author: PropTypes.string,
+      })
+    ),
+  };
+
+export default BookList;
