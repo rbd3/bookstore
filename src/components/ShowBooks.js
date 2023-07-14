@@ -1,6 +1,6 @@
 import React from 'react';
-import Book from './Home';
 import Form from './Form';
+import BookList from './BookList';
 
 const books = [
   { id: 1, title: 'The Hunger Games', author: 'Suzanne Collins' },
@@ -10,9 +10,7 @@ const books = [
 
 const ShowBooks = () => (
   <div>
-    {books.map((book) => (
-      <Book key={book.id} title={book.title} author={book.author} />
-    ))}
+    <BookList books={books} />
     <Form />
   </div>
 );
