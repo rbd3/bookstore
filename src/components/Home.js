@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const Book = ({ title, author }) => (
-  <div className='author-wrapper'>
-    <h3 className='athor-name'>{title}</h3>
+  <div className="author-wrapper">
+    <h3 className="athor-name">{title}</h3>
     <p>
       {author}
     </p>
