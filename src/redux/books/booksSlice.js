@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
+import bookList from '../booksList';
+import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
-  books: [],
+  books: bookList.map(book => ({ ...book, id: uuidv4() })),
 };
 
 const booksSlice = createSlice({
@@ -9,7 +11,7 @@ const booksSlice = createSlice({
   initialState,
   reducers: {
     addBook: (state, action) => {
-      state.books.push(action.payload);
+      state.books.push({ ...action.payload, id: uuidv4() });
     },
     removeBook: (state, action) => {
       const bookIdToRemove = action.payload;
