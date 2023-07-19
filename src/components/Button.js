@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({ name, onClick }) => (
-  <button type="button" onClick={onClick}>
+  <button onClick={onClick}>
     {name}
   </button>
 );
 
 Button.propTypes = {
   name: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
