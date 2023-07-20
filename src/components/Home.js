@@ -8,7 +8,6 @@ const Book = ({ id, title, author }) => {
   const dispatch = useDispatch();
 
   const handleRemoveBook = () => {
-    console.log(id);
     dispatch(removeBook(id));
   };
 
