@@ -160,7 +160,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add Account System**
+- **Add comment action**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,7 +186,7 @@ If you like this project you can share this project to your friend
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse for this project
+I would like to thank microverse for this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
