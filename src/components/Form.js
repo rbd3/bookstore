@@ -20,8 +20,6 @@ const Form = () => {
       category: 'Fiction',
     };
 
-    console.log('Submitting new book:', newBook);
-
     dispatch(addBook(newBook));
 
     setTitle('');

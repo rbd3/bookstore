@@ -3,7 +3,7 @@ import bookList from '../booksList';
 import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
-  books: bookList.map(book => ({ ...book, item_id: uuidv4() })),
+  books: bookList,
 };
 
 const booksSlice = createSlice({
