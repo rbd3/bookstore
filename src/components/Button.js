@@ -1,29 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ type, name, onClick }) => {
-  let buttonType;
-  if (type === 'submit') {
-    buttonType = 'submit';
-  } else {
-    buttonType = 'button';
-  }
-
-  return (
-    <button type={buttonType} onClick={onClick}>
-      {name}
-    </button>
-  );
-};
+const Button = ({ name, onClick }) => (
+  <button type='button' onClick={onClick}>
+    {name}
+  </button>
+);
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['button', 'submit']),
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   onClick: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
-  type: 'button',
+  name: 'Button',
 };
 
 export default Button;
