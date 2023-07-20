@@ -2,22 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({ type, name, onClick }) => {
-  // Ensure that the 'type' prop is a valid string
-  if (typeof type !== 'string') {
-    throw new Error("Button component: 'type' prop must be a valid string.");
-  }
+  const buttonType = type === 'submit' ? 'submit' : 'button';
 
   return (
-    <button type={type} onClick={onClick}>
+    <button type={buttonType} onClick={onClick}>
       {name}
     </button>
   );
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['button', 'submit']).isRequired,
+  type: PropTypes.oneOf(['button', 'submit']),
   name: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+};
+
+Button.defaultProps = {
+  type: 'button',
 };
 
 export default Button;
