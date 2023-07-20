@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({ type, name, onClick }) => {
-  const buttonType = type === 'submit' ? 'submit' : 'button';
+  let buttonType;
+  if (type === 'submit') {
+    buttonType = 'submit';
+  } else {
+    buttonType = 'button';
+  }
 
   return (
     <button type={buttonType} onClick={onClick}>
