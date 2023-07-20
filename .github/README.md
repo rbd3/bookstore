@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Math Magician</b></h1>
+  <h1><b>BookStore</b></h1>
 
 </div>
 
@@ -10,7 +10,7 @@
 
 ## 📗 Table of Contents
 
-- [📖 Math Magician - Microverse Project ](#-math-magician---microverse-project-)
+- [📖 BookStore -  ](#-bookstore----)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -34,9 +34,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math Magician - Microverse Project <a name="about-project"></a>
+# 📖 BookStore -  <a name="about-project"></a>
 
-**Math Magician** is a milestone project for microverse student in React Module
+**BookStore** is a platform you can add and remove a book.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -80,7 +80,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/rbd3/math-magicians.git
+  git clone https://github.com/rbd3/bookstore.git
 ```
 
 ### Install
@@ -88,7 +88,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd math-magician
+  cd BookStore
   npm install
 ```
 
@@ -170,7 +170,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/rbd3/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/rbd3/bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
