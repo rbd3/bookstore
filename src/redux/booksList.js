@@ -15,11 +15,10 @@ const bookList = [
   },
   {
     item_id: uuidv4(),
-    title: "The Selfish Gene",
+    title: 'The Selfish Gene',
     author: 'Richard Dawkins',
     category: 'Nonfiction',
-  }
-  ];
+  },
+];
 
-  export default bookList;
-  
+export default bookList;

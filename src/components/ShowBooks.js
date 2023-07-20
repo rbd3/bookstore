@@ -4,7 +4,7 @@ import Form from './Form';
 import BookList from './BookList';
 
 const ShowBooks = () => {
-  const books = useSelector(state => state.books.books);
+  const books = useSelector((state) => state.books.books);
 
   return (
     <div>

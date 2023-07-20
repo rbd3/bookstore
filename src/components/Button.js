@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name, onClick }) => (
-  <button onClick={onClick}>
+const Button = ({ type, name, onClick }) => (
+  <button type={type} onClick={onClick}>
     {name}
   </button>
 );
 
 Button.propTypes = {
+  type: PropTypes.oneOf(['submit', 'button']).isRequired,
   name: PropTypes.string,
   onClick: PropTypes.func.isRequired,
 };

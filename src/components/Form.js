@@ -15,8 +15,8 @@ const Form = () => {
 
     const newBook = {
       id: uuidv4(),
-      title: title,
-      author: author,
+      title,
+      author,
       category: 'Fiction',
     };
 
