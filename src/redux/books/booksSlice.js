@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import bookList from '../booksList';
 import { v4 as uuidv4 } from 'uuid';
+import bookList from '../booksList';
 
 const initialState = {
   books: bookList,

@@ -9,7 +9,7 @@ const Button = ({ name, onClick }) => (
 
 Button.propTypes = {
   name: PropTypes.string,
-  onClick: PropTypes.func,
+  onClick: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
