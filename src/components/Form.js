@@ -17,17 +17,16 @@ const Form = () => {
       id: uuidv4(),
       title,
       author,
-      category: 'Fiction',
+      category,
     };
 
-    if (title && author && category) {
       dispatch(addBook(newBook));
     await dispatch(postBook(newBook));
 
     setTitle('');
     setAuthor('');
     setCategory('');
-    }
+    
   };
 
   return (

@@ -60,9 +60,9 @@ const Book = ({ id, title, author, category }) => {
           <div style={{ fontSize: '15px' }}>Completed</div>
         </div>
         <div className="vertical-divider" />
-        <div>
-          <div style={{ fontSize: '12px', fontWeight: '300' }}>CURRENT CHAPTER</div>
-          <div style={{ marginBottom: '10px' }}>{`Chapter ${randomChapter}`}</div>
+        <div className="current-progress-container">
+          <div className="current-chapter">CURRENT CHAPTER</div>
+          <div className='chapter'>{`Chapter ${randomChapter}`}</div>
           <button className="book-update-progress-button" type="button">
             Update Progress
           </button>
