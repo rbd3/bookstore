@@ -100,19 +100,17 @@
 .book-card-button-container button {
   background-color: transparent;
   border: none;
-  color: var(--primary-color);
   font-weight: 200;
   padding: 0;
   width: 4.563rem;
-    height: 1.188rem;
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 0.875rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #4386bf;
+  height: 1.188rem;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.875rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .vertical-divider {
@@ -130,45 +128,45 @@
 
 .book-category {
   width: 3.063rem;
-    height: 1.125rem;
-    margin: 0 2.438rem 0 0;
-    opacity: 0.5;
-    font-family: 'Montserrat', 'Sans serif';
-    font-size: 1.3rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #121212;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: 'Montserrat', 'Sans serif';
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .book-title {
   width: 100%;
   height: 1.813rem;
   font-family: 'Roboto Slab', sans-serif;
-    font-size: 1.6rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.2px;
-    color: #121212;
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden;
-    margin-top: 3%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
+  margin-top: 3%;
 }
 
 .book-author {
   font-family: RobotoSlab;
-    font-size: 1.2rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #4386bf;
-    margin: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  margin: 0;
 }
 
 .book-progressbar {
@@ -181,17 +179,16 @@
   color: #fff;
   border: none;
   padding: 7px 15px;
-    width: 8.938rem;
-    
-    font-family: RobotoSlab;
-    font-size: 1rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-align: center;
-    margin-top: 15%;
+  width: 8.938rem; 
+  font-family: RobotoSlab;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 15%;
 }
 
 .form-container {
@@ -260,31 +257,31 @@ button:hover {
 }
 
 .current-chapter {
-    width: 7.875rem;
-    height: 1.125rem;
-    margin-left: 5%;
-    opacity: 0.5;
-    font-family: RobotoSlab;
-    font-size: 0.831rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #121212;
+  width: 7.875rem;
+  height: 1.125rem;
+  margin-left: 5%;
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 0.831rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .chapter {
-    width: 100%;
-    height: 1.313rem;
-    margin-left: 5%;
-    margin-top: 3%;
-    font-family: RobotoSlab;
-    font-size: 1.2rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    color: #121212;
+  width: 100%;
+  height: 1.313rem;
+  margin-left: 5%;
+  margin-top: 3%;
+  font-family: RobotoSlab;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
 }

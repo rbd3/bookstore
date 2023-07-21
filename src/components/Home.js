@@ -5,7 +5,8 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import Button from './Button';
 import { removeBook, deleteBook } from '../redux/books/booksSlice';
 
-const Book = ({ id, title, author, category }) => {
+const Book = ({ 
+  id, title, author, category }) => {
   const dispatch = useDispatch();
 
   const handleRemoveBook = async () => {
@@ -34,7 +35,6 @@ const Book = ({ id, title, author, category }) => {
             Edit
           </button>
       </div>
-      
       </div>
       <div className="book-card-right-container">
         <div className="book-progressbar">
@@ -62,13 +62,12 @@ const Book = ({ id, title, author, category }) => {
         <div className="vertical-divider" />
         <div className="current-progress-container">
           <div className="current-chapter">CURRENT CHAPTER</div>
-          <div className='chapter'>{`Chapter ${randomChapter}`}</div>
+          <div className="chapter">{`Chapter ${randomChapter}`}</div>
           <button className="book-update-progress-button" type="button">
             Update Progress
           </button>
         </div>
       </div>
-      
     </div>
   );
 };
@@ -77,6 +76,7 @@ Book.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string,
   author: PropTypes.string,
+  category: PropTypes.string,
 };
 
 Book.defaultProps = {
