@@ -31,10 +31,10 @@ const Book = ({
         <div className="vertical-divider" />
           <Button type="button" name="Remove" onClick={handleRemoveBook} />
           <div className="vertical-divider" />
-           <button type="button">
-           Edit
-           </button>
-      </div>
+            <button type="button">
+             Edit
+            </button>
+        </div>
       </div>
       <div className="book-card-right-container">
         <div className="book-progressbar">

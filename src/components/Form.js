@@ -61,8 +61,8 @@ const Form = () => {
           <button type="submit" name="Submit">Submit</button>
         </form>
       </div>
-      </div> 
- );
+    </div>
+  );
 };
 
 export default Form;
