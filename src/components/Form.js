@@ -46,23 +46,23 @@ const Form = () => {
             onChange={(e) => setAuthor(e.target.value)}
           />
           <select
-                name="Category"
-                value={category}
-                onChange={(e) => setCategory(e.target.category)}
-              >
-                <option value="" defaultValue="Category" disabled>
-                  Category
-                </option>
-                <option value="Fiction">Fiction</option>
-                <option value="Nonfiction">Action</option>
-                <option value="Biography">Biography</option>
-                <option value="LoveStory">LoveStory</option>
-              </select>
+            name="Category"
+            value={category}
+            onChange={(e) => setCategory(e.target.category)}
+          >
+            <option value="" defaultValue="Category" disabled>
+              Category
+            </option>
+            <option value="Fiction">Fiction</option>
+            <option value="Nonfiction">Action</option>
+            <option value="Biography">Biography</option>
+            <option value="LoveStory">LoveStory</option>
+          </select>
           <button type="submit" name="Submit">Submit</button>
         </form>
       </div>
       </div> 
-     );
+ );
 };
 
 export default Form;
