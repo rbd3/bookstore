@@ -25,9 +25,9 @@ const Book = ({
         <h3 className="book-title">{title}</h3>
         <p className="book-author">{author}</p>
         <div className="book-card-button-container">
-           <button type="button">
+          <button type="button">
             Comments
-           </button>
+          </button>
           <div className="vertical-divider" />
           <Button type="button" name="Remove" onClick={handleRemoveBook} />
           <div className="vertical-divider" />
