@@ -26,8 +26,8 @@ const Book = ({
         <p className="book-author">{author}</p>
         <div className="book-card-button-container">
           <button type="button">
-          Comments
-        </button>
+           Comments
+          </button>
           <div className="vertical-divider" />
           <Button type="button" name="Remove" onClick={handleRemoveBook} />
           <div className="vertical-divider" />
