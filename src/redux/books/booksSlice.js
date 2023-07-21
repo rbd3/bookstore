@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
-import bookList from '../booksList';
 
 const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/s9FNkORj0uZDW3k16phf/books';
 
@@ -44,7 +43,6 @@ export const deleteBook = createAsyncThunk('books/deleteBook', async (id) => {
     throw new Error('Failed to delete book');
   }
 });
-
 
 const booksSlice = createSlice({
   name: 'books',
