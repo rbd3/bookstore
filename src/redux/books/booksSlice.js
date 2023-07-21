@@ -24,7 +24,7 @@ export const postBook = createAsyncThunk('books/postBooks', async (book) => {
       item_id: uuidv4(),
       title: book.title,
       author: book.author,
-      category: book.category,
+      category: 'Fiction',
     });
     return response.data;
   } catch (error) {
