@@ -21,19 +21,19 @@ const Book = ({
   return (
     <div className="book-card">
       <div className="book-card-left-container">
-      <div className="book-category">{category}</div>
+        <div className="book-category">{category}</div>
         <h3 className="book-title">{title}</h3>
         <p className="book-author">{author}</p>
         <div className="book-card-button-container">
-        <button type="button">
+          <button type="button">
           Comments
         </button>
           <div className="vertical-divider" />
           <Button type="button" name="Remove" onClick={handleRemoveBook} />
           <div className="vertical-divider" />
-            <button type="button">
-             Edit
-            </button>
+          <button type="button">
+            Edit
+          </button>
         </div>
       </div>
       <div className="book-card-right-container">
