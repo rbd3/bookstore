@@ -6,6 +6,7 @@ import { addBook, postBook } from '../redux/books/booksSlice';
 const Form = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   const dispatch = useDispatch();
 
@@ -19,16 +20,21 @@ const Form = () => {
       category: 'Fiction',
     };
 
-    dispatch(addBook(newBook));
+    if (title && author && category) {
+      dispatch(addBook(newBook));
     await dispatch(postBook(newBook));
 
     setTitle('');
     setAuthor('');
+    setCategory('');
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="form-container">
+      <div className="form-wrapper">
       <h3>ADD NEW BOOK</h3>
+      <form onSubmit={handleSubmit} className="form">
       <input
         type="text"
         placeholder="Book title"
@@ -41,8 +47,25 @@ const Form = () => {
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
       />
+      <select
+            name="Category"
+            onChange={(e) => setCategory(e.target.category)}
+          >
+            <option value="" defaultValue="Category" disabled>
+              Category
+            </option>
+            <option value="Fiction">Fiction</option>
+            <option value="Nonfiction">Action</option>
+            <option value="Biography">Biography</option>
+            <option value="LoveStory">LoveStory</option>
+          </select>
+          
       <button type="submit" name="Submit">Submit</button>
     </form>
+
+</div>
+    </div>
+    
   );
 };
 

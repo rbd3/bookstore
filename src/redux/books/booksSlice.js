@@ -24,7 +24,7 @@ export const postBook = createAsyncThunk('books/postBooks', async (book) => {
       item_id: uuidv4(),
       title: book.title,
       author: book.author,
-      category: 'Book',
+      category: book.category,
     });
     return response.data;
   } catch (error) {
@@ -68,6 +68,7 @@ const booksSlice = createSlice({
         books: Object.entries(action.payload).map(([id]) => ({
           title: action.payload[id][0].title,
           author: action.payload[id][0].author,
+          category: action.payload[id][0].category,
           item_id: id,
         })),
       }))
