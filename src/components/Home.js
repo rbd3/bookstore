@@ -5,8 +5,9 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import Button from './Button';
 import { removeBook, deleteBook } from '../redux/books/booksSlice';
 
-const Book = ({ 
-  id, title, author, category }) => {
+const Book = ({
+  id, title, author, category
+ }) => {
   const dispatch = useDispatch();
 
   const handleRemoveBook = async () => {
@@ -82,6 +83,7 @@ Book.propTypes = {
 Book.defaultProps = {
   title: 'Book title',
   author: 'Unknown Author',
+  category: 'Fiction',
 };
 
 export default Book;

@@ -180,7 +180,7 @@
   border: none;
   padding: 7px 15px;
   width: 8.938rem; 
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -276,7 +276,7 @@ button:hover {
   height: 1.313rem;
   margin-left: 5%;
   margin-top: 3%;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   font-stretch: normal;
