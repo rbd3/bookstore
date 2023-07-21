@@ -28,7 +28,7 @@ const Book = ({
         <button type="button">
           Comments
         </button>
-        <div className="vertical-divider" />
+          <div className="vertical-divider" />
           <Button type="button" name="Remove" onClick={handleRemoveBook} />
           <div className="vertical-divider" />
             <button type="button">
