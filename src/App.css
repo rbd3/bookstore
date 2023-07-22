@@ -11,7 +11,7 @@
   place-items: center;
   border-bottom: 2px solid var(--border-color);
   margin-bottom: 2%;
-  margin-left: -5rem;
+  margin-left: -6.3rem;
 }
 
 .nav-wrapper {
@@ -44,7 +44,7 @@
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 2px;
-  color: var(--text-color);
+  color: #121212;
 }
 
 .link-container a.active {
@@ -195,7 +195,7 @@
 
 .form-wrapper {
   max-width: var(--max-width);
-  width: 80%;
+  width: 90%;
 }
 
 .form-wrapper h3 {
@@ -227,7 +227,7 @@
 }
 
 .form select {
-  width: 15%;
+  width: 30%;
 }
 
 .form button {
