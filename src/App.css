@@ -1,4 +1,287 @@
-.author-wrapper {
-  background-color: white;
-  margin-left: 2%;
+:root {
+  --border-color: #f1f1f1;
+  --backround-color: #fafafa;
+  --primary-color: #0290ff;
+  --accent-color: #8a8a8a;
+  --max-width: 1000px;
+}
+
+.nav-container {
+  display: grid;
+  place-items: center;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 2%;
+  margin-left: -6.4rem;
+}
+
+.nav-wrapper {
+  max-width: var(--max-width);
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-wrapper .nav-title {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 40px;
+  padding-block: 1.4rem;
+}
+
+.link-container {
+  display: flex;
+  gap: 10px;
+}
+
+.link-container a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #121212;
+}
+
+.link-container a.active {
+  font-weight: 700;
+}
+
+.page {
+  background-color: var(--backround-color);
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.book-card {
+  max-width: var(--max-width);
+  width: 90%;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  gap: 30px;
+  margin-left: 8rem;
+  margin-bottom: 1.5%;
+}
+
+.book-card-left-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.book-card-right-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book-card-button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8%;
+  gap: 5px;
+}
+
+.book-card-button-container button {
+  background-color: transparent;
+  border: none;
+  font-weight: 200;
+  padding: 0;
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.875rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.vertical-divider {
+  border-left: 2px solid var(--primary-color);
+  height: 80%;
+  border-left-color: #afccdb;
+  margin: 0;
+}
+
+.divider-book-form {
+  border-top: 1px solid var(--border-color);
+  max-width: 1000px;
+  width: 80%;
+}
+
+.book-category {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.book-title {
+  width: 100%;
+  height: 1.813rem;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
+  margin-top: 3%;
+}
+
+.book-author {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  margin: 0;
+}
+
+.book-progressbar {
+  width: 20%;
+  height: auto;
+}
+
+.book-update-progress-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 7px 15px;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.form-container {
+  display: grid;
+  margin-left: 8rem;
+}
+
+.form-wrapper {
+  max-width: var(--max-width);
+  width: 90%;
+}
+
+.form-wrapper h3 {
+  color: var(--accent-color);
+  letter-spacing: 1px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  gap: 20px;
+  box-sizing: border-box;
+  height: 55px;
+}
+
+.form input,
+.form select,
+.form button {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.form input {
+  width: 50%;
+}
+
+.form select {
+  width: 30%;
+}
+
+.form button {
+  width: 20%;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: 500ms;
+  opacity: 0.7;
+}
+
+.book-card-right-container,
+.vertical-divider {
+  margin-left: 12%;
+  border-left-color: #afccdb;
+}
+
+.current-progress-container {
+  margin-left: 5%;
+}
+
+.current-chapter {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin-left: 5%;
+  opacity: 0.5;
+  font-size: 0.831rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter {
+  width: 100%;
+  height: 1.313rem;
+  margin-left: 5%;
+  margin-top: 3%;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.nav-container img {
+  filter: brightness(1.2) saturate(100%) hue-rotate(-180deg);
 }
