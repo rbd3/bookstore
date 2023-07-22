@@ -11,7 +11,7 @@
   place-items: center;
   border-bottom: 2px solid var(--border-color);
   margin-bottom: 2%;
-  margin-left: -6.3rem;
+  margin-left: -6.4rem;
 }
 
 .nav-wrapper {
@@ -281,3 +281,8 @@ button:hover {
   letter-spacing: -0.4px;
   color: #121212;
 }
+
+.nav-container img {
+  filter: brightness(1.2) saturate(100%) hue-rotate(-180deg);
+}
+
